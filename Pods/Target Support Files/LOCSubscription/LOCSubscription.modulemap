@@ -1,0 +1,6 @@
+framework module LOCSubscription {
+  umbrella header "LOCSubscription-umbrella.h"
+
+  export *
+  module * { export * }
+}

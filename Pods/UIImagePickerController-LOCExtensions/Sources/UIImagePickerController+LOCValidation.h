@@ -1,0 +1,19 @@
+//
+//  UIImagePickerController+LOCValidation.h
+//  UIImagePickerController-LOCExtensions
+//
+//  Created by Hungju Lu on 22/03/2016.
+//  Copyright © 2016 Locassa. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIImagePickerController (LOCValidation)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark - validation
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
++ (BOOL)hasCamera;
++ (BOOL)hasLibrary;
+
+@end

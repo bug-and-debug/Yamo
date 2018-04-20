@@ -1,0 +1,262 @@
+//
+//  MyProfileViewController.m
+//  Yamo
+//
+//  Created by Vlad Buhaescu on 27/04/2016.
+//  Copyright © 2016 Locassa. All rights reserved.
+//
+
+#import "Yamo-Swift.h"
+
+#import "MyProfileViewController.h"
+#import "HeaderView.h"
+#import "ScrollingChildTabViewController.h"
+#import "ScrollingChildViewControllerItems.h"
+#import "UIColor+Yamo.h"
+#import "UIFont+Yamo.h"
+#import "APIClient+MyProfile.h"
+#import "ProfileDTO.h"
+#import "RouteSummary.h"
+#import "VenueSummary.h"
+
+@import AFNetworking;
+@import LOCScrollingTabViewController;
+
+@interface MyProfileViewController ()<ScrollingTabViewControllerDelegate,UIGestureRecognizerDelegate>
+
+@property (nonatomic, strong) ScrollingTabViewController *scrollingTabViewController;
+@property (nonatomic) HeaderView *headerView;
+@property (nonatomic) NSMutableArray *scrollingChildTabViewControllers;
+@property (nonatomic) NSArray *arrayOfPlaces;
+@property (nonatomic) NSArray *arrayOfFriends;
+@property (nonatomic) NSArray *arrayOfRoute;
+@property (nonatomic) NSArray *arrayOfVenues;
+@property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
+
+@property (nonatomic, strong) User *user;
+
+@end
+
+@implementation MyProfileViewController
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSFontAttributeName:[UIFont preferredFontForStyle:FontStyleGraphikRegular size:17.0f]}];
+    
+    self.title = NSLocalizedString(@"My profile", nil);
+    
+    
+    [self setHeaderView];
+    [self.view addConstraints:[self setConstraintsForHeaderView]];
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Here" style:UIBarButtonItemStylePlain target:self action:@selector(presentEdit)];
+}
+
+-(void)presentEdit {
+    
+
+    EditProfileViewController *new = [EditProfileViewController new];
+    
+    [self presentViewController:new animated:YES completion:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self fetchUserInformation];
+}
+
+- (void) setHeaderView{
+    self.headerView = [[HeaderView alloc] init];
+    self.headerView.backgroundColor = [UIColor yamoLightGray];
+    self.headerView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard)];
+    [self.headerView addGestureRecognizer:_tapGesture];
+    [self.view addSubview:_headerView];
+}
+
+- (void) setScrollingTabViewControllerWithData {
+    self.scrollingChildTabViewControllers = [[NSMutableArray alloc] init];
+    self.scrollingTabViewController = [[ScrollingTabViewController alloc] init];
+    
+    self.scrollingTabViewController.selectedColor = [UIColor yamoYellow];
+    self.scrollingTabViewController.selectedFont = [UIFont preferredFontForStyle:FontStyleGraphikRegular size:15.0f];
+    self.scrollingTabViewController.normalFont = [UIFont preferredFontForStyle:FontStyleGraphikRegular size:15.0f];
+    
+    self.scrollingTabViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addChildViewController:self.scrollingTabViewController];
+    [self.view addSubview:self.scrollingTabViewController.view];
+    self.scrollingTabViewController.delegate = self;
+    [self.view addConstraints:[self setConstraintsForScollingTabView]];
+    //Setting Tabs for ScrollingTabViewController
+    [self setScrollingChildTabViewControllers];
+    [self.scrollingTabViewController didMoveToParentViewController:self];
+    self.scrollingTabViewController.viewControllers = self.scrollingChildTabViewControllers;
+}
+
+
+#pragma mark - Set Scrolling Child Tab View Controllers
+
+- (void)setScrollingChildTabViewControllers {
+    
+    NSMutableArray *scrollingTabViewControllerItems = [[NSMutableArray alloc] init];
+    
+    ScrollingChildViewControllerItems *getToKnowMe = [[ScrollingChildViewControllerItems alloc] init];
+    getToKnowMe.title = NSLocalizedString(@"Get to know me", "get to know me");
+    getToKnowMe.datasource = self.arrayOfPlaces;
+    [scrollingTabViewControllerItems addObject:getToKnowMe];
+    
+    ScrollingChildViewControllerItems *places = [[ScrollingChildViewControllerItems alloc] init];
+    places.title = NSLocalizedString(@"Places", "places");
+    places.datasource = self.arrayOfVenues;
+    [scrollingTabViewControllerItems addObject:places];
+    
+    ScrollingChildViewControllerItems *friends = [[ScrollingChildViewControllerItems alloc] init];
+    friends.title = NSLocalizedString(@"Friends", "friends");
+    friends.datasource = self.arrayOfFriends;
+    [scrollingTabViewControllerItems addObject:friends];
+    
+    ScrollingChildViewControllerItems *route = [[ScrollingChildViewControllerItems alloc] init];
+    route.title = NSLocalizedString(@"Route", "route");
+    route.datasource = self.arrayOfRoute;
+    [scrollingTabViewControllerItems addObject:route];
+    
+
+    //Set ScrollingChildTabViewController
+    for (ScrollingChildViewControllerItems *item in scrollingTabViewControllerItems) {
+        ScrollingChildTabViewController *vc = [[ScrollingChildTabViewController alloc] initWithDataSource:item.datasource];
+        vc.view.translatesAutoresizingMaskIntoConstraints = NO;
+        vc.title = item.title;
+        vc.view.backgroundColor = [UIColor yamoLightGray];
+        [self.scrollingChildTabViewControllers addObject:vc];
+    }
+   
+}
+
+#pragma mark - Scrolling Tab View Controller Delegate
+
+- (void)scrollingTabViewControllerDidSelectViewController:(ScrollingTabViewController *)scrollingTabViewController selectedViewController:(UIViewController *)selectedViewController {
+    [self.view endEditing:YES];
+}
+
+#pragma mark - API Requests
+
+- (void) fetchUserInformation {
+    
+<<<<<<< HEAD
+    __weak typeof(self) weakSelf = self;
+    [[APIClient sharedInstance] getUserWithSuccessBlock:^(id  _Nullable element) {
+        
+        if ([element isKindOfClass:[User class]]) {
+            weakSelf.user = (User *)element;
+            weakSelf.headerView.usernameLabel.text = [NSString stringWithFormat:@"%@ %@", weakSelf.user.firstName, weakSelf.user.lastName ];
+            weakSelf.headerView.locationLabel.text = [NSString stringWithFormat:@"%@", weakSelf.user.locationName ];
+            [weakSelf.headerView.profileImageView setImageWithURL:[NSURL URLWithString:weakSelf.user.profileImageUrl] placeholderImage:nil];
+            weakSelf.arrayOfRoute = [[NSArray alloc] initWithArray:weakSelf.user.routes];
+            weakSelf.arrayOfVenues = [[NSArray alloc] initWithArray:weakSelf.user.venues];
+            weakSelf.arrayOfFriends = [[NSArray alloc] initWithArray:weakSelf.user.followers];
+            [weakSelf setScrollingTabViewControllerWithData];
+        
+=======
+    [[APIClient sharedInstance] getUserProfileWithSuccessBlock:^(id  _Nullable element) {
+        
+        if ([element isKindOfClass:[ProfileDTO class]]) {
+            ProfileDTO *user = (ProfileDTO *)element;
+            self.headerView.usernameLabel.text = [NSString stringWithFormat:@"%@ %@", user.firstName, user.lastName ];
+            self.headerView.locationLabel.text = [NSString stringWithFormat:@"%@", user.locationName ];
+            [self.headerView.profileImageView setImageWithURL:[NSURL URLWithString:user.profileImageUrl] placeholderImage:nil];
+            self.arrayOfRoute = [[NSArray alloc] initWithArray:user.routes];
+            self.arrayOfVenues = [[NSArray alloc] initWithArray:user.venues];
+            self.arrayOfFriends = [[NSArray alloc] initWithArray:user.followers];
+            [self setScrollingTabViewControllerWithData];
+>>>>>>> develop
+        }
+        
+    } failureBlock:^(NSError * _Nonnull error, NSInteger statusCode, NSString * _Nullable context) {
+        
+        NSLog(@"ERROR %@", error);
+    }];
+}
+
+#pragma mark - Set Constraints
+
+- (NSArray *) setConstraintsForHeaderView{
+    
+    return @[
+             [NSLayoutConstraint constraintWithItem:self.headerView
+                                          attribute:NSLayoutAttributeLeading
+                                          relatedBy:NSLayoutRelationEqual
+                                             toItem:self.view
+                                          attribute:NSLayoutAttributeLeading
+                                         multiplier:1.0
+                                           constant:0],
+             [NSLayoutConstraint constraintWithItem:self.headerView
+                                          attribute:NSLayoutAttributeTop
+                                          relatedBy:NSLayoutRelationEqual
+                                             toItem:self.view
+                                          attribute:NSLayoutAttributeTop
+                                         multiplier:1.0
+                                           constant:self.navigationController.navigationBar.bounds.size.height +20 ],
+             [NSLayoutConstraint constraintWithItem:self.headerView
+                                          attribute:NSLayoutAttributeTrailing
+                                          relatedBy:NSLayoutRelationEqual
+                                             toItem:self.view
+                                          attribute:NSLayoutAttributeTrailing
+                                         multiplier:1.0
+                                           constant:0]
+             ,
+             [NSLayoutConstraint constraintWithItem:self.headerView
+                                          attribute:NSLayoutAttributeHeight
+                                          relatedBy:NSLayoutRelationEqual
+                                             toItem:nil
+                                          attribute:NSLayoutAttributeHeight
+                                         multiplier:1.0
+                                           constant:100]
+             ];
+}
+- (NSArray *) setConstraintsForScollingTabView{
+    
+    return @[
+          [NSLayoutConstraint constraintWithItem:self.scrollingTabViewController.view
+                                       attribute:NSLayoutAttributeLeading
+                                       relatedBy:NSLayoutRelationEqual
+                                          toItem:self.view
+                                       attribute:NSLayoutAttributeLeading
+                                      multiplier:1.0
+                                        constant:0],
+          [NSLayoutConstraint constraintWithItem:self.scrollingTabViewController.view
+                                       attribute:NSLayoutAttributeTop
+                                       relatedBy:NSLayoutRelationEqual
+                                          toItem:self.headerView
+                                       attribute:NSLayoutAttributeTop
+                                      multiplier:1.0
+                                        constant:100],
+          [NSLayoutConstraint constraintWithItem:self.scrollingTabViewController.view
+                                       attribute:NSLayoutAttributeTrailing
+                                       relatedBy:NSLayoutRelationEqual
+                                          toItem:self.view
+                                       attribute:NSLayoutAttributeTrailing
+                                      multiplier:1.0
+                                        constant:0]
+          ,
+          [NSLayoutConstraint constraintWithItem:self.scrollingTabViewController.view
+                                       attribute:NSLayoutAttributeBottom
+                                       relatedBy:NSLayoutRelationEqual
+                                          toItem:self.view
+                                       attribute:NSLayoutAttributeBottom
+                                      multiplier:1.0
+                                        constant:0]
+          ];
+}
+
+#pragma mark - Gesture Action
+
+- (void) closeKeyboard{
+    [self.view endEditing:YES];
+}
+
+@end

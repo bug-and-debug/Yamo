@@ -1,0 +1,157 @@
+{
+  "name": "LOCPermissions-Swift",
+  "version": "1.4.2",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com",
+    "Mo Moosa": "mo.moosa@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/locpermissions-swift",
+  "summary": "A set of tools for handling permissions request.",
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "https://bitbucket.org/locassa/locpermissions-swift.git",
+    "tag": "1.4.2"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Base",
+      "source_files": [
+        "LOCPermissions/PermissionsAccessView.swift",
+        "LOCPermissions/PermissionTypes.swift",
+        "LOCPermissions/PermissionRequest.swift",
+        "LOCPermissions/PermissionRequestViewModel.swift"
+      ],
+      "resource_bundles": {
+        "LOCPermissionsResources": [
+          "LOCPermissions/PermissionsAccessView.xib"
+        ]
+      }
+    },
+    {
+      "name": "Location",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestLocation.swift",
+      "frameworks": "CoreLocation"
+    },
+    {
+      "name": "Notification",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestNotification.swift"
+    },
+    {
+      "name": "Camera",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestCamera.swift",
+      "frameworks": "AVFoundation"
+    },
+    {
+      "name": "Photos",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestPhotos.swift",
+      "frameworks": "AssetsLibrary"
+    },
+    {
+      "name": "CalendarEvents",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestCalendarEvents.swift",
+      "frameworks": "EventKit"
+    },
+    {
+      "name": "CalendarReminders",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestCalendarReminders.swift",
+      "frameworks": "EventKit"
+    },
+    {
+      "name": "Contacts",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestContacts.swift",
+      "frameworks": "AddressBook"
+    },
+    {
+      "name": "Microphone",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestMicrophone.swift",
+      "frameworks": "AVFoundation"
+    },
+    {
+      "name": "Activities",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestActivities.swift",
+      "frameworks": "CoreMotion"
+    },
+    {
+      "name": "SocialFacebook",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestSocialFacebook.swift",
+      "frameworks": "Accounts"
+    },
+    {
+      "name": "SocialTwitter",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestSocialTwitter.swift",
+      "frameworks": "Accounts"
+    },
+    {
+      "name": "Health",
+      "dependencies": {
+        "LOCPermissions-Swift/Base": [
+
+        ]
+      },
+      "source_files": "LOCPermissions/PermissionRequestHealth.swift",
+      "frameworks": "HealthKit"
+    }
+  ]
+}

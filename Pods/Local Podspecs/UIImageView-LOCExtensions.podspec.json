@@ -1,0 +1,31 @@
+{
+  "name": "UIImageView-LOCExtensions",
+  "version": "1.0",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/uiimageview-locextensions.git",
+  "summary": "Convenient methods in a set of UIImageView categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/uiimageview-locextensions.git",
+    "tag": "1.0"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Creation",
+      "source_files": "Sources/UIImageView+LOCCreation.{h,m}"
+    },
+    {
+      "name": "Letter",
+      "source_files": "Sources/UIImageView+LOCLetters.{h,m}"
+    }
+  ]
+}

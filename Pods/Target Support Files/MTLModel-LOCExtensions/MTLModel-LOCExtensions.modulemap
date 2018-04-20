@@ -1,0 +1,6 @@
+framework module MTLModel_LOCExtensions {
+  umbrella header "MTLModel-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

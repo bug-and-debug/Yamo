@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController">
+            <connections>
+                <outlet property="mapView" destination="yCC-6x-udl" id="NPj-dX-jQP"/>
+                <outlet property="overlayForGetToKnowMe" destination="bFe-1J-2Zn" id="0us-Bb-bPM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yCC-6x-udl">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFe-1J-2Zn">
+                    <rect key="frame" x="0.0" y="64" width="600" height="189"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want the most accurate suggestions?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPS-zl-BVC">
+                            <rect key="frame" x="4" y="40" width="592" height="24"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lc-nL-z4s">
+                            <rect key="frame" x="239" y="113" width="122" height="33"/>
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                            <state key="normal" title="Get to know me!">
+                                <color key="titleColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="presentGetToKnowMe:" destination="-1" eventType="touchUpInside" id="L9d-Ie-43c"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5e-dv-SFr">
+                            <rect key="frame" x="8" y="76" width="584" height="21"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-P0-Ywl">
+                            <rect key="frame" x="553" y="12" width="39" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="39" id="4Lb-Ac-A2f"/>
+                                <constraint firstAttribute="height" constant="31" id="oxY-QG-VbA"/>
+                            </constraints>
+                            <state key="normal" title=" " image="dismiss_X"/>
+                            <connections>
+                                <action selector="removeOverlay:" destination="-1" eventType="touchUpInside" id="9iG-BO-Udk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81749707460403442" green="0.9146156907081604" blue="0.40516868233680725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="TPS-zl-BVC" firstAttribute="centerX" secondItem="bFe-1J-2Zn" secondAttribute="centerX" id="5u7-uR-RmP"/>
+                        <constraint firstItem="TPS-zl-BVC" firstAttribute="leading" secondItem="bFe-1J-2Zn" secondAttribute="leading" constant="4" id="J65-D3-5Cx"/>
+                        <constraint firstAttribute="trailing" secondItem="V5e-dv-SFr" secondAttribute="trailing" constant="8" id="Jhi-BI-ENU"/>
+                        <constraint firstAttribute="trailing" secondItem="TPS-zl-BVC" secondAttribute="trailing" constant="4" id="L8Z-xN-RQU"/>
+                        <constraint firstItem="3lc-nL-z4s" firstAttribute="top" secondItem="V5e-dv-SFr" secondAttribute="bottom" constant="16" id="Lke-I4-WzC"/>
+                        <constraint firstItem="V5e-dv-SFr" firstAttribute="leading" secondItem="bFe-1J-2Zn" secondAttribute="leading" constant="8" id="Lkm-O5-TAz"/>
+                        <constraint firstItem="TPS-zl-BVC" firstAttribute="top" secondItem="bFe-1J-2Zn" secondAttribute="top" constant="40" id="VUl-kU-q8M"/>
+                        <constraint firstAttribute="trailing" secondItem="QGL-P0-Ywl" secondAttribute="trailing" constant="8" id="aJm-7R-msz"/>
+                        <constraint firstAttribute="height" constant="189" id="eii-q5-dNa"/>
+                        <constraint firstItem="QGL-P0-Ywl" firstAttribute="top" secondItem="bFe-1J-2Zn" secondAttribute="top" constant="12" id="hVB-hO-pWM"/>
+                        <constraint firstItem="V5e-dv-SFr" firstAttribute="top" secondItem="TPS-zl-BVC" secondAttribute="bottom" constant="12" id="hju-XG-7ru"/>
+                        <constraint firstItem="V5e-dv-SFr" firstAttribute="centerX" secondItem="bFe-1J-2Zn" secondAttribute="centerX" id="mo6-dc-SiN"/>
+                        <constraint firstItem="3lc-nL-z4s" firstAttribute="centerX" secondItem="bFe-1J-2Zn" secondAttribute="centerX" id="zov-F6-vfO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yCC-6x-udl" secondAttribute="trailing" id="2aH-Gd-K42"/>
+                <constraint firstItem="bFe-1J-2Zn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3xc-s1-lda"/>
+                <constraint firstItem="yCC-6x-udl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JgV-f6-sQU"/>
+                <constraint firstAttribute="bottom" secondItem="yCC-6x-udl" secondAttribute="bottom" id="P6z-HN-vXi"/>
+                <constraint firstItem="bFe-1J-2Zn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="QRJ-y0-dAd"/>
+                <constraint firstItem="bFe-1J-2Zn" firstAttribute="leading" secondItem="yCC-6x-udl" secondAttribute="leading" id="SwJ-I4-u7L"/>
+                <constraint firstItem="yCC-6x-udl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bjh-Mc-rnn"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="dismiss_X" width="8" height="8"/>
+    </resources>
+</document>

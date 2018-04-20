@@ -1,0 +1,23 @@
+{
+  "name": "LOCGenericLogin",
+  "version": "1.1.1",
+  "authors": {
+    "Peter Su": "peter.su@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/locgenericlogin",
+  "summary": "Generic login view controller with default appearance that you subclass.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/locgenericlogin",
+    "tag": "1.1.1"
+  },
+  "license": {
+    "type": "EULA",
+    "file": "LICENSE.md"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "LOCGenericLogin/*/*.{h,m}",
+  "deprecated_in_favor_of": "LOCGenericLogin-Swift"
+}

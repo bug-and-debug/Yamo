@@ -1,0 +1,39 @@
+{
+  "name": "NSObject-LOCExtensions",
+  "version": "1.0",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/nsobject-locextensions.git",
+  "summary": "Convenient methods in a set of NSObject categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/nsobject-locextensions.git",
+    "tag": "1.0"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "ClassUtility",
+      "source_files": "Sources/NSObject+LOCClassUtility.{h,m}"
+    },
+    {
+      "name": "Validation",
+      "source_files": "Sources/NSObject+LOCValidation.{h,m}"
+    },
+    {
+      "name": "Cloning",
+      "source_files": "Sources/NSObject+LOCCloning.{h,m}"
+    },
+    {
+      "name": "Blocks",
+      "source_files": "Sources/NSObject+LOCBlocks.{h,m}"
+    }
+  ]
+}

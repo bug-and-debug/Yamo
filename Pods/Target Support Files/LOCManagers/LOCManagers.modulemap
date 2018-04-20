@@ -1,0 +1,6 @@
+framework module LOCManagers {
+  umbrella header "LOCManagers-umbrella.h"
+
+  export *
+  module * { export * }
+}

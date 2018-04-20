@@ -1,0 +1,22 @@
+{
+  "name": "LOCScrollingTabViewController",
+  "version": "0.2.3",
+  "authors": {
+    "Vlad Buhaescu": "vlad.buhaescu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/locscrollingtabviewcontroller",
+  "summary": "Initial version of LOCScrollingTabViewController",
+  "source": {
+    "git": "https://bitbucket.org/locassa/locscrollingtabviewcontroller.git",
+    "tag": "0.2.3"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "LOCScrollingTabViewController/**/S*.{swift}"
+}

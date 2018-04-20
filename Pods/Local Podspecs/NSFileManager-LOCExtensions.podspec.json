@@ -1,0 +1,74 @@
+{
+  "name": "NSFileManager-LOCExtensions",
+  "version": "1.0",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/nsfilemanager-locextensions.git",
+  "summary": "Convenient methods in a set of NSFileManager categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/nsfilemanager-locextensions.git",
+    "tag": "1.0"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Actions",
+      "dependencies": {
+        "NSFileManager-LOCExtensions/Validation": [
+
+        ]
+      },
+      "source_files": "Sources/NSFileManager+LOCActions.{h,m}"
+    },
+    {
+      "name": "Directories",
+      "source_files": "Sources/NSFileManager+LOCDirectories.{h,m}"
+    },
+    {
+      "name": "Fetching",
+      "dependencies": {
+        "NSFileManager-LOCExtensions/Validation": [
+
+        ]
+      },
+      "source_files": "Sources/NSFileManager+LOCFetching.{h,m}"
+    },
+    {
+      "name": "Saving",
+      "dependencies": {
+        "NSFileManager-LOCExtensions/Actions": [
+
+        ]
+      },
+      "source_files": "Sources/NSFileManager+LOCSaving.{h,m}"
+    },
+    {
+      "name": "SkipBackup",
+      "source_files": "Sources/NSFileManager+LOCSkipBackup.{h,m}"
+    },
+    {
+      "name": "Utilities",
+      "source_files": "Sources/NSFileManager+LOCUtilities.{h,m}"
+    },
+    {
+      "name": "Validation",
+      "dependencies": {
+        "NSString-LOCExtensions/Validation": [
+
+        ]
+      },
+      "xcconfig": {
+        "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/NSString-LOCExtensions"
+      },
+      "source_files": "Sources/NSFileManager+LOCValidation.{h,m}"
+    }
+  ]
+}

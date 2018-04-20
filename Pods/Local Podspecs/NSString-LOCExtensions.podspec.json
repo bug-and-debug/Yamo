@@ -1,0 +1,59 @@
+{
+  "name": "NSString-LOCExtensions",
+  "version": "1.0",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/nsstring-locextensions.git",
+  "summary": "Convenient methods in a set of NSString categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/nsstring-locextensions.git",
+    "tag": "1.0"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Comparison",
+      "source_files": "Sources/NSString+LOCComparison.{h,m}"
+    },
+    {
+      "name": "Generation",
+      "source_files": "Sources/NSString+LOCGeneration.{h,m}"
+    },
+    {
+      "name": "Search",
+      "source_files": "Sources/NSString+LOCSearch.{h,m}"
+    },
+    {
+      "name": "Utilities",
+      "dependencies": {
+        "NSString-LOCExtensions/Comparison": [
+
+        ]
+      },
+      "source_files": "Sources/NSString+LOCUtilities.{h,m}"
+    },
+    {
+      "name": "Validation",
+      "dependencies": {
+        "NSObject-LOCExtensions/Validation": [
+
+        ],
+        "NSString-LOCExtensions/Utilities": [
+
+        ]
+      },
+      "xcconfig": {
+        "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/NSObject-LOCExtensions"
+      },
+      "source_files": "Sources/NSString+LOCValidation.{h,m}"
+    }
+  ]
+}

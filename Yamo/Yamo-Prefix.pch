@@ -1,0 +1,23 @@
+//
+//  Yamo-Prefix.pch
+//  Yamo
+//
+//  Created by Jin on 7/10/17.
+//  Copyright © 2017 Locassa. All rights reserved.
+//
+
+#ifndef Yamo_Prefix_pch
+#define Yamo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "LoginViewController.h"
+#import "IntroViewController.h"
+#import "SignUpViewController.h"
+#import "Utility.h"
+#import "XHTabBar.h"
+#import "FavoritesViewController.h"
+#import "SettingsViewController.h"
+#import "APIClient.h"
+#import "APIClient+Authentication.h"
+#endif /* Yamo_Prefix_pch */

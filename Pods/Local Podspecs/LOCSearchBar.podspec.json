@@ -1,0 +1,27 @@
+{
+  "name": "LOCSearchBar",
+  "version": "1.1",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/locsearchbar",
+  "summary": "Customisable UITextField subclass with a search icon.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/locsearchbar",
+    "tag": "1.1"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Sources/LOCSearchTextField.swift",
+  "resource_bundles": {
+    "LOCSearchBarResources": [
+      "Sources/searchbar-icon*"
+    ]
+  }
+}

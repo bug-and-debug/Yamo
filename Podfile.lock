@@ -1,0 +1,450 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.18.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.18.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.18.0):
+    - FBSDKCoreKit
+  - Firebase/Core (3.13.0):
+    - FirebaseAnalytics (= 3.7.0)
+    - FirebaseCore (= 3.5.0)
+  - FirebaseAnalytics (3.7.0):
+    - FirebaseCore (~> 3.5)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.5.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.9)
+  - Flurry-iOS-SDK (7.9.2):
+    - Flurry-iOS-SDK/FlurrySDK (= 7.9.2)
+  - Flurry-iOS-SDK/FlurrySDK (7.9.2)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - HockeySDK (4.1.3):
+    - HockeySDK/DefaultLib (= 4.1.3)
+  - HockeySDK/DefaultLib (4.1.3)
+  - LOCCameraView (1.0.1)
+  - LOCFloatingTextField (1.0.10)
+  - LOCGenericLogin (1.1.1)
+  - LOCManagers (0.9):
+    - LOCManagers/Connectivity (= 0.9)
+    - LOCManagers/Device (= 0.9)
+    - LOCManagers/Keychain (= 0.9)
+    - LOCManagers/Network (= 0.9)
+  - LOCManagers/Connectivity (0.9):
+    - Reachability (~> 3.2)
+  - LOCManagers/Device (0.9)
+  - LOCManagers/Keychain (0.9):
+    - SFHFKeychainUtils
+  - LOCManagers/Network (0.9):
+    - AFNetworking (~> 3.0)
+  - LOCPasswordTextField (1.0.4):
+    - LOCFloatingTextField
+  - LOCPermissions-Swift/Base (1.4.2)
+  - LOCPermissions-Swift/Location (1.4.2):
+    - LOCPermissions-Swift/Base
+  - LOCPermissions-Swift/Notification (1.4.2):
+    - LOCPermissions-Swift/Base
+  - LOCScrollingTabViewController (0.2.3)
+  - LOCSearchBar (1.1)
+  - LOCSubscription (0.0.7)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - MTLManagedObjectAdapter (1.0.3):
+    - Mantle (~> 2.0)
+    - MTLManagedObjectAdapter/extobjc (= 1.0.3)
+  - MTLManagedObjectAdapter/extobjc (1.0.3):
+    - Mantle (~> 2.0)
+  - MTLModel-LOCExtensions (1.1.5):
+    - MTLModel-LOCExtensions/Conversion (= 1.1.5)
+    - MTLModel-LOCExtensions/Mock (= 1.1.5)
+  - MTLModel-LOCExtensions/Conversion (1.1.5):
+    - Mantle
+  - MTLModel-LOCExtensions/Mock (1.1.5):
+    - Mantle
+    - NSDate-LOCExtensions/Creation (= 1.0)
+  - NSArray-LOCExtensions (1.0):
+    - NSArray-LOCExtensions/Utilities (= 1.0)
+    - NSArray-LOCExtensions/Validation (= 1.0)
+  - NSArray-LOCExtensions/Utilities (1.0)
+  - NSArray-LOCExtensions/Validation (1.0):
+    - NSObject-LOCExtensions/Validation
+  - NSDate-LOCExtensions (1.0):
+    - NSDate-LOCExtensions/Comparison (= 1.0)
+    - NSDate-LOCExtensions/Creation (= 1.0)
+    - NSDate-LOCExtensions/DateData (= 1.0)
+    - NSDate-LOCExtensions/Definitions (= 1.0)
+    - NSDate-LOCExtensions/Relation (= 1.0)
+    - NSDate-LOCExtensions/StringRepresentation (= 1.0)
+    - NSDate-LOCExtensions/Timespan (= 1.0)
+  - NSDate-LOCExtensions/Comparison (1.0):
+    - NSDate-LOCExtensions/Creation
+    - NSDate-LOCExtensions/Definitions
+    - NSDate-LOCExtensions/Timespan
+  - NSDate-LOCExtensions/Creation (1.0):
+    - NSDate-LOCExtensions/Definitions
+  - NSDate-LOCExtensions/DateData (1.0):
+    - NSDate-LOCExtensions/Definitions
+    - NSDate-LOCExtensions/Timespan
+  - NSDate-LOCExtensions/Definitions (1.0)
+  - NSDate-LOCExtensions/Relation (1.0)
+  - NSDate-LOCExtensions/StringRepresentation (1.0)
+  - NSDate-LOCExtensions/Timespan (1.0)
+  - NSFileManager-LOCExtensions (1.0):
+    - NSFileManager-LOCExtensions/Actions (= 1.0)
+    - NSFileManager-LOCExtensions/Directories (= 1.0)
+    - NSFileManager-LOCExtensions/Fetching (= 1.0)
+    - NSFileManager-LOCExtensions/Saving (= 1.0)
+    - NSFileManager-LOCExtensions/SkipBackup (= 1.0)
+    - NSFileManager-LOCExtensions/Utilities (= 1.0)
+    - NSFileManager-LOCExtensions/Validation (= 1.0)
+  - NSFileManager-LOCExtensions/Actions (1.0):
+    - NSFileManager-LOCExtensions/Validation
+  - NSFileManager-LOCExtensions/Directories (1.0)
+  - NSFileManager-LOCExtensions/Fetching (1.0):
+    - NSFileManager-LOCExtensions/Validation
+  - NSFileManager-LOCExtensions/Saving (1.0):
+    - NSFileManager-LOCExtensions/Actions
+  - NSFileManager-LOCExtensions/SkipBackup (1.0)
+  - NSFileManager-LOCExtensions/Utilities (1.0)
+  - NSFileManager-LOCExtensions/Validation (1.0):
+    - NSString-LOCExtensions/Validation
+  - NSObject-LOCExtensions (1.0):
+    - NSObject-LOCExtensions/Blocks (= 1.0)
+    - NSObject-LOCExtensions/ClassUtility (= 1.0)
+    - NSObject-LOCExtensions/Cloning (= 1.0)
+    - NSObject-LOCExtensions/Validation (= 1.0)
+  - NSObject-LOCExtensions/Blocks (1.0)
+  - NSObject-LOCExtensions/ClassUtility (1.0)
+  - NSObject-LOCExtensions/Cloning (1.0)
+  - NSObject-LOCExtensions/Validation (1.0)
+  - NSString-LOCExtensions (1.0):
+    - NSString-LOCExtensions/Comparison (= 1.0)
+    - NSString-LOCExtensions/Generation (= 1.0)
+    - NSString-LOCExtensions/Search (= 1.0)
+    - NSString-LOCExtensions/Utilities (= 1.0)
+    - NSString-LOCExtensions/Validation (= 1.0)
+  - NSString-LOCExtensions/Comparison (1.0)
+  - NSString-LOCExtensions/Generation (1.0)
+  - NSString-LOCExtensions/Search (1.0)
+  - NSString-LOCExtensions/Utilities (1.0):
+    - NSString-LOCExtensions/Comparison
+  - NSString-LOCExtensions/Validation (1.0):
+    - NSObject-LOCExtensions/Validation
+    - NSString-LOCExtensions/Utilities
+  - Reachability (3.2)
+  - SFHFKeychainUtils (0.0.1)
+  - UIAlertController-LOCExtensions (1.0):
+    - UIAlertController-LOCExtensions/Blocks (= 1.0)
+  - UIAlertController-LOCExtensions/Blocks (1.0)
+  - UIButton-LOCExtensions (1.0.2):
+    - UIButton-LOCExtensions/Creation (= 1.0.2)
+    - UIButton-LOCExtensions/Utilities (= 1.0.2)
+  - UIButton-LOCExtensions/Creation (1.0.2)
+  - UIButton-LOCExtensions/Utilities (1.0.2):
+    - UIImage-LOCExtensions/Color
+  - UIColor-LOCExtensions (1.1):
+    - UIColor-LOCExtensions/Base (= 1.1)
+    - UIColor-LOCExtensions/HexColors (= 1.1)
+    - UIColor-LOCExtensions/RGBColors (= 1.1)
+  - UIColor-LOCExtensions/Base (1.1)
+  - UIColor-LOCExtensions/HexColors (1.1):
+    - UIColor-LOCExtensions/Base
+  - UIColor-LOCExtensions/RGBColors (1.1):
+    - UIColor-LOCExtensions/Base
+  - UIImage-LOCExtensions (1.1):
+    - UIImage-LOCExtensions/Alpha (= 1.1)
+    - UIImage-LOCExtensions/Color (= 1.1)
+    - UIImage-LOCExtensions/Draw (= 1.1)
+    - UIImage-LOCExtensions/Effects (= 1.1)
+    - UIImage-LOCExtensions/Network (= 1.1)
+    - UIImage-LOCExtensions/Resize (= 1.1)
+  - UIImage-LOCExtensions/Alpha (1.1)
+  - UIImage-LOCExtensions/Color (1.1)
+  - UIImage-LOCExtensions/Draw (1.1)
+  - UIImage-LOCExtensions/Effects (1.1)
+  - UIImage-LOCExtensions/Network (1.1):
+    - NSFileManager-LOCExtensions/Actions
+    - NSFileManager-LOCExtensions/Directories
+    - NSString-LOCExtensions/Utilities
+    - UIImage-LOCExtensions/Resize
+  - UIImage-LOCExtensions/Resize (1.1)
+  - UIImagePickerController-LOCExtensions (1.1):
+    - UIImagePickerController-LOCExtensions/Creation (= 1.1)
+    - UIImagePickerController-LOCExtensions/Validation (= 1.1)
+  - UIImagePickerController-LOCExtensions/Creation (1.1):
+    - UIImagePickerController-LOCExtensions/Validation
+  - UIImagePickerController-LOCExtensions/Validation (1.1)
+  - UIImageView-LOCExtensions (1.0):
+    - UIImageView-LOCExtensions/Creation (= 1.0)
+    - UIImageView-LOCExtensions/Letter (= 1.0)
+  - UIImageView-LOCExtensions/Creation (1.0)
+  - UIImageView-LOCExtensions/Letter (1.0)
+  - UIView-LOCExtensions (1.22):
+    - UIView-LOCExtensions/Alpha (= 1.22)
+    - UIView-LOCExtensions/Autolayout (= 1.22)
+    - UIView-LOCExtensions/ComplexAnimations (= 1.22)
+    - UIView-LOCExtensions/Divider (= 1.22)
+    - UIView-LOCExtensions/Doppelganger (= 1.22)
+    - UIView-LOCExtensions/Factory (= 1.22)
+    - UIView-LOCExtensions/FrameSetting (= 1.22)
+    - UIView-LOCExtensions/LayerEditing (= 1.22)
+    - UIView-LOCExtensions/Layout (= 1.22)
+    - UIView-LOCExtensions/Rotation (= 1.22)
+  - UIView-LOCExtensions/Alpha (1.22)
+  - UIView-LOCExtensions/Autolayout (1.22)
+  - UIView-LOCExtensions/ComplexAnimations (1.22)
+  - UIView-LOCExtensions/Divider (1.22)
+  - UIView-LOCExtensions/Doppelganger (1.22):
+    - UIView-LOCExtensions/Alpha
+  - UIView-LOCExtensions/Factory (1.22):
+    - UIView-LOCExtensions/LayerEditing
+  - UIView-LOCExtensions/FrameSetting (1.22):
+    - UIView-LOCExtensions/Layout
+  - UIView-LOCExtensions/LayerEditing (1.22)
+  - UIView-LOCExtensions/Layout (1.22)
+  - UIView-LOCExtensions/Rotation (1.22)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - FBSDKCoreKit (~> 4.16)
+  - FBSDKLoginKit (~> 4.16)
+  - FBSDKShareKit (~> 4.16)
+  - Firebase/Core
+  - Flurry-iOS-SDK
+  - GoogleMaps
+  - HockeySDK
+  - LOCCameraView (from `git@bitbucket.org:thisisglance/loccameraview.git`, tag `1.0.1`)
+  - LOCFloatingTextField (from `git@bitbucket.org:thisisglance/locfloatingtextfield.git`, tag `1.0.10`)
+  - LOCGenericLogin (from `git@bitbucket.org:thisisglance/locgenericlogin.git`, tag `1.1.1`)
+  - LOCManagers (from `git@bitbucket.org:thisisglance/locmanagers.git`, tag `0.9`)
+  - LOCPasswordTextField (from `git@bitbucket.org:thisisglance/locpasswordtextfield.git`, tag `1.0.4`)
+  - LOCPermissions-Swift/Location (from `git@bitbucket.org:thisisglance/locpermissions-swift.git`, tag `1.4.2`)
+  - LOCPermissions-Swift/Notification (from `git@bitbucket.org:thisisglance/locpermissions-swift.git`, tag `1.4.2`)
+  - LOCScrollingTabViewController (from `git@bitbucket.org:thisisglance/locscrollingtabviewcontroller.git`, tag `0.2.3`)
+  - LOCSearchBar (from `git@bitbucket.org:thisisglance/locsearchbar.git`, tag `1.1`)
+  - LOCSubscription (from `git@bitbucket.org:thisisglance/locsubscription.git`, tag `0.0.7`)
+  - Mantle
+  - MTLManagedObjectAdapter
+  - MTLModel-LOCExtensions (from `git@bitbucket.org:thisisglance/mtlmodel-locextensions.git`, tag `1.1.5`)
+  - NSArray-LOCExtensions (from `git@bitbucket.org:thisisglance/nsarray-locextensions.git`, tag `1.0`)
+  - NSDate-LOCExtensions (from `git@bitbucket.org:thisisglance/nsdate-locextensions.git`, tag `1.0`)
+  - NSFileManager-LOCExtensions (from `git@bitbucket.org:thisisglance/nsfilemanager-locextensions.git`, tag `1.0`)
+  - NSObject-LOCExtensions (from `git@bitbucket.org:thisisglance/nsobject-locextensions.git`, tag `1.0`)
+  - NSString-LOCExtensions (from `git@bitbucket.org:thisisglance/nsstring-locextensions.git`, tag `1.0`)
+  - UIAlertController-LOCExtensions (from `git@bitbucket.org:thisisglance/uialertcontroller-locextensions.git`, tag `1.0`)
+  - UIButton-LOCExtensions (from `git@bitbucket.org:thisisglance/uibutton-locextensions.git`, tag `1.0.2`)
+  - UIColor-LOCExtensions (from `git@bitbucket.org:thisisglance/uicolor-locextensions.git`, tag `1.1`)
+  - UIImage-LOCExtensions (from `git@bitbucket.org:thisisglance/uiimage-locextensions.git`, tag `1.1`)
+  - UIImagePickerController-LOCExtensions (from `git@bitbucket.org:thisisglance/uiimagepickercontroller-locextensions.git`, tag `1.1`)
+  - UIImageView-LOCExtensions (from `git@bitbucket.org:thisisglance/uiimageview-locextensions.git`, tag `1.0`)
+  - UIView-LOCExtensions (from `git@bitbucket.org:thisisglance/uiview-locextensions.git`, tag `1.22`)
+
+EXTERNAL SOURCES:
+  LOCCameraView:
+    :git: git@bitbucket.org:thisisglance/loccameraview.git
+    :tag: 1.0.1
+  LOCFloatingTextField:
+    :git: git@bitbucket.org:thisisglance/locfloatingtextfield.git
+    :tag: 1.0.10
+  LOCGenericLogin:
+    :git: git@bitbucket.org:thisisglance/locgenericlogin.git
+    :tag: 1.1.1
+  LOCManagers:
+    :git: git@bitbucket.org:thisisglance/locmanagers.git
+    :tag: '0.9'
+  LOCPasswordTextField:
+    :git: git@bitbucket.org:thisisglance/locpasswordtextfield.git
+    :tag: 1.0.4
+  LOCPermissions-Swift:
+    :git: git@bitbucket.org:thisisglance/locpermissions-swift.git
+    :tag: 1.4.2
+  LOCScrollingTabViewController:
+    :git: git@bitbucket.org:thisisglance/locscrollingtabviewcontroller.git
+    :tag: 0.2.3
+  LOCSearchBar:
+    :git: git@bitbucket.org:thisisglance/locsearchbar.git
+    :tag: '1.1'
+  LOCSubscription:
+    :git: git@bitbucket.org:thisisglance/locsubscription.git
+    :tag: 0.0.7
+  MTLModel-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/mtlmodel-locextensions.git
+    :tag: 1.1.5
+  NSArray-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsarray-locextensions.git
+    :tag: '1.0'
+  NSDate-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsdate-locextensions.git
+    :tag: '1.0'
+  NSFileManager-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsfilemanager-locextensions.git
+    :tag: '1.0'
+  NSObject-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsobject-locextensions.git
+    :tag: '1.0'
+  NSString-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsstring-locextensions.git
+    :tag: '1.0'
+  UIAlertController-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uialertcontroller-locextensions.git
+    :tag: '1.0'
+  UIButton-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uibutton-locextensions.git
+    :tag: 1.0.2
+  UIColor-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uicolor-locextensions.git
+    :tag: '1.1'
+  UIImage-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiimage-locextensions.git
+    :tag: '1.1'
+  UIImagePickerController-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiimagepickercontroller-locextensions.git
+    :tag: '1.1'
+  UIImageView-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiimageview-locextensions.git
+    :tag: '1.0'
+  UIView-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiview-locextensions.git
+    :tag: '1.22'
+
+CHECKOUT OPTIONS:
+  LOCCameraView:
+    :git: git@bitbucket.org:thisisglance/loccameraview.git
+    :tag: 1.0.1
+  LOCFloatingTextField:
+    :git: git@bitbucket.org:thisisglance/locfloatingtextfield.git
+    :tag: 1.0.10
+  LOCGenericLogin:
+    :git: git@bitbucket.org:thisisglance/locgenericlogin.git
+    :tag: 1.1.1
+  LOCManagers:
+    :git: git@bitbucket.org:thisisglance/locmanagers.git
+    :tag: '0.9'
+  LOCPasswordTextField:
+    :git: git@bitbucket.org:thisisglance/locpasswordtextfield.git
+    :tag: 1.0.4
+  LOCPermissions-Swift:
+    :git: git@bitbucket.org:thisisglance/locpermissions-swift.git
+    :tag: 1.4.2
+  LOCScrollingTabViewController:
+    :git: git@bitbucket.org:thisisglance/locscrollingtabviewcontroller.git
+    :tag: 0.2.3
+  LOCSearchBar:
+    :git: git@bitbucket.org:thisisglance/locsearchbar.git
+    :tag: '1.1'
+  LOCSubscription:
+    :git: git@bitbucket.org:thisisglance/locsubscription.git
+    :tag: 0.0.7
+  MTLModel-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/mtlmodel-locextensions.git
+    :tag: 1.1.5
+  NSArray-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsarray-locextensions.git
+    :tag: '1.0'
+  NSDate-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsdate-locextensions.git
+    :tag: '1.0'
+  NSFileManager-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsfilemanager-locextensions.git
+    :tag: '1.0'
+  NSObject-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsobject-locextensions.git
+    :tag: '1.0'
+  NSString-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/nsstring-locextensions.git
+    :tag: '1.0'
+  UIAlertController-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uialertcontroller-locextensions.git
+    :tag: '1.0'
+  UIButton-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uibutton-locextensions.git
+    :tag: 1.0.2
+  UIColor-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uicolor-locextensions.git
+    :tag: '1.1'
+  UIImage-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiimage-locextensions.git
+    :tag: '1.1'
+  UIImagePickerController-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiimagepickercontroller-locextensions.git
+    :tag: '1.1'
+  UIImageView-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiimageview-locextensions.git
+    :tag: '1.0'
+  UIView-LOCExtensions:
+    :git: git@bitbucket.org:thisisglance/uiview-locextensions.git
+    :tag: '1.22'
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
+  FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
+  FBSDKShareKit: 0b8d6cc3f103c75297eb3c62caec284a2ccf1b9e
+  Firebase: 5bc34d7b5ff5792e3386c8b28dc6265deeab0da4
+  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
+  FirebaseCore: 1c0a13bf59bb95cdd19577252499f0ec6a03e999
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  Flurry-iOS-SDK: 300dc1d78443dea3d433a38e76292f20f14f0a96
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  HockeySDK: 7dd8d7f5a4d71b7a5eebb320c8515cb22e99221b
+  LOCCameraView: 513c02efa27b7bf25ef2eb478ea7156cc8632deb
+  LOCFloatingTextField: 8cab063b08414f4f45976c95c5aad43f8da11977
+  LOCGenericLogin: 96123c990b4730d2233be6221dc9317ab669cb5f
+  LOCManagers: ea686156fe0a3cfdd62e017947f3311ebcab7f45
+  LOCPasswordTextField: 0e140f53e38a6a5ed235103b48d6556d02d92a55
+  LOCPermissions-Swift: 55055f914ae61574eb215c2d17653dc09906a2e3
+  LOCScrollingTabViewController: 66308797e3efce24cac3869545a881e5f85d7cd0
+  LOCSearchBar: 7d25046fcccbd3ed63f2da7f43816980beef8824
+  LOCSubscription: 5e05beacec5d6e0ed7eeed1c6cfcc7b1fa275090
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MTLManagedObjectAdapter: 631a53432675dcf03a9d90624afb3cececf54631
+  MTLModel-LOCExtensions: 488d58e96156f03b6462fc20375b5bf44aecb6c1
+  NSArray-LOCExtensions: 3ec712f8b87b7c681129d910f99b645f2dfa36d8
+  NSDate-LOCExtensions: f25f170ffba72d17ea711943c5a5d6f92131efa6
+  NSFileManager-LOCExtensions: 022eb7a16ab2585fb094c582747c1a69f9c19bb0
+  NSObject-LOCExtensions: a32aba9bc4cba43e42965c62a7b5b0c2a6a6a5c8
+  NSString-LOCExtensions: 6a40898fc3d2c725e29cf349d337483c7999792c
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
+  UIAlertController-LOCExtensions: 728291ab63e3b24369f1c88a214094ab3b14d09f
+  UIButton-LOCExtensions: b5c914507b818a5659cec3d89ae50805a7e50954
+  UIColor-LOCExtensions: a72041b4aa1caf56d5fff01d9364e1937b569d25
+  UIImage-LOCExtensions: 21c25463327c8f7e98e5d213f2fb627c713c3008
+  UIImagePickerController-LOCExtensions: a25794993f2c30c0a5415024e8848ce4b14d3b75
+  UIImageView-LOCExtensions: 984a706c1bfc80753fdf27a7b018a08b7f0af968
+  UIView-LOCExtensions: ba6eb35fcb7b6c94ec13017e9a26a878bac7fd01
+
+PODFILE CHECKSUM: fbfbf3276a50ab0df3d90caf03199752b438cc52
+
+COCOAPODS: 1.1.1

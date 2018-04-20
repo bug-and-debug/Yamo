@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YourPlaceActionSheetViewController">
+            <connections>
+                <outlet property="actionSheet" destination="T4g-TS-QmA" id="HA3-JH-ZUI"/>
+                <outlet property="actionSheetBottomConstraint" destination="5uS-Ir-4mm" id="tFo-VM-k9k"/>
+                <outlet property="actionSheetHeightConstraint" destination="hY8-Fv-hxx" id="fLb-Qv-83t"/>
+                <outlet property="view" destination="0b6-8r-vm6" id="zuk-Za-a7O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="0b6-8r-vm6">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ima-KQ-9le">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-TS-QmA" customClass="YourPlaceActionSheet">
+                        <rect key="frame" x="0.0" y="600" width="600" height="250"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="hY8-Fv-hxx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="T4g-TS-QmA" secondAttribute="bottom" constant="-250" id="5uS-Ir-4mm"/>
+                    <constraint firstItem="T4g-TS-QmA" firstAttribute="leading" secondItem="ima-KQ-9le" secondAttribute="leading" id="CFw-bv-8TR"/>
+                    <constraint firstAttribute="trailing" secondItem="T4g-TS-QmA" secondAttribute="trailing" id="zl9-iP-L2m"/>
+                </constraints>
+            </view>
+            <blurEffect style="dark"/>
+        </visualEffectView>
+    </objects>
+</document>

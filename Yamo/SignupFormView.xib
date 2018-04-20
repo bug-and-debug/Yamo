@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Graphik-Regular.ttf">
+            <string>Graphik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="r0Z-gW-tZy" customClass="SignupFormView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAw-pG-8Ax" customClass="TextField">
+                    <rect key="frame" x="15" y="8" width="139" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ekn-Gn-dc3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidChange:" destination="r0Z-gW-tZy" eventType="editingChanged" id="Wso-5x-eTg"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQm-Qc-5cd" customClass="TextField">
+                    <rect key="frame" x="166" y="8" width="139" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SAN-Rz-FQE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="SAN-Rz-FQE"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="textFieldDidChange:" destination="r0Z-gW-tZy" eventType="editingChanged" id="nuM-pM-bRj"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CR8-2o-zbG" customClass="TextField">
+                    <rect key="frame" x="15" y="63" width="290" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="JAp-PN-tad"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JAp-PN-tad"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="textFieldDidChange:" destination="r0Z-gW-tZy" eventType="editingChanged" id="f1x-Kw-5eI"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEr-O9-Umt" customClass="PasswordTextField">
+                    <rect key="frame" x="15" y="118" width="290" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="xFV-tw-hNp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xFV-tw-hNp"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="textFieldDidChange:" destination="r0Z-gW-tZy" eventType="editingChanged" id="iBc-3e-UWL"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CR8-2o-zbG" firstAttribute="trailing" secondItem="RQm-Qc-5cd" secondAttribute="trailing" id="1Re-f1-60p"/>
+                <constraint firstItem="mAw-pG-8Ax" firstAttribute="leading" secondItem="r0Z-gW-tZy" secondAttribute="leading" constant="15" id="2fY-t2-hE2"/>
+                <constraint firstItem="RQm-Qc-5cd" firstAttribute="leading" secondItem="mAw-pG-8Ax" secondAttribute="trailing" constant="12" id="2ig-Du-50E"/>
+                <constraint firstItem="mEr-O9-Umt" firstAttribute="leading" secondItem="CR8-2o-zbG" secondAttribute="leading" id="3RW-fi-OxY"/>
+                <constraint firstItem="RQm-Qc-5cd" firstAttribute="width" secondItem="mAw-pG-8Ax" secondAttribute="width" id="7Hh-TG-fNz"/>
+                <constraint firstAttribute="bottom" secondItem="mEr-O9-Umt" secondAttribute="bottom" constant="35" id="AaL-yz-xrg"/>
+                <constraint firstItem="RQm-Qc-5cd" firstAttribute="bottom" secondItem="mAw-pG-8Ax" secondAttribute="bottom" id="Hlw-59-Ewk"/>
+                <constraint firstItem="RQm-Qc-5cd" firstAttribute="top" secondItem="mAw-pG-8Ax" secondAttribute="top" id="MtN-ai-yzs"/>
+                <constraint firstItem="CR8-2o-zbG" firstAttribute="leading" secondItem="mAw-pG-8Ax" secondAttribute="leading" id="Rgb-a7-weB"/>
+                <constraint firstAttribute="trailing" secondItem="RQm-Qc-5cd" secondAttribute="trailing" constant="15" id="S1P-6C-RNc"/>
+                <constraint firstItem="mAw-pG-8Ax" firstAttribute="top" secondItem="r0Z-gW-tZy" secondAttribute="top" constant="8" id="Ttd-IM-uKT"/>
+                <constraint firstItem="CR8-2o-zbG" firstAttribute="top" secondItem="mAw-pG-8Ax" secondAttribute="bottom" constant="10" id="cKJ-fE-Rox"/>
+                <constraint firstItem="mEr-O9-Umt" firstAttribute="height" secondItem="mAw-pG-8Ax" secondAttribute="height" id="hS6-ox-lUa"/>
+                <constraint firstItem="CR8-2o-zbG" firstAttribute="height" secondItem="mAw-pG-8Ax" secondAttribute="height" id="hX9-os-Gm1"/>
+                <constraint firstItem="mEr-O9-Umt" firstAttribute="top" secondItem="CR8-2o-zbG" secondAttribute="bottom" constant="10" id="ij4-hK-fk8"/>
+                <constraint firstItem="mEr-O9-Umt" firstAttribute="trailing" secondItem="CR8-2o-zbG" secondAttribute="trailing" id="qlS-4Z-TdE"/>
+                <constraint firstItem="RQm-Qc-5cd" firstAttribute="height" secondItem="mAw-pG-8Ax" secondAttribute="height" id="wfX-Fn-cX4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emailTextField" destination="CR8-2o-zbG" id="MRN-qb-B8K"/>
+                <outlet property="firstNameTextField" destination="mAw-pG-8Ax" id="aKF-aq-qJc"/>
+                <outlet property="lastNameTextField" destination="RQm-Qc-5cd" id="nXr-GT-rrM"/>
+                <outlet property="passwordTextField" destination="mEr-O9-Umt" id="NFg-t7-ZUa"/>
+            </connections>
+            <point key="canvasLocation" x="-179" y="-193"/>
+        </view>
+    </objects>
+</document>

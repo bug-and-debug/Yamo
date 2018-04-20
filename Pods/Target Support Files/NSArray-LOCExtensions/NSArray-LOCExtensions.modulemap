@@ -1,0 +1,6 @@
+framework module NSArray_LOCExtensions {
+  umbrella header "NSArray-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

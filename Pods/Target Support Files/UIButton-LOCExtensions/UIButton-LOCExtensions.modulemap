@@ -1,0 +1,6 @@
+framework module UIButton_LOCExtensions {
+  umbrella header "UIButton-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "LOCSubscription",
+  "version": "0.0.7",
+  "summary": "StoreKit IAP component.",
+  "description": "Auto renewable subscription. Has been written during Vesta \n                    and Camra development.",
+  "homepage": "https://bitbucket.org/locassa/locsubscription",
+  "license": {
+    "type": "EULA",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "Boris Yurkevich": "boris.yurkevich@locassa.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://bitbucket.org/locassa/locsubscription.git",
+    "tag": "0.0.7"
+  },
+  "source_files": "LOCSubscription/*",
+  "exclude_files": "Example/*",
+  "requires_arc": true,
+  "deprecated_in_favor_of": "LOCSubscription-Swift"
+}

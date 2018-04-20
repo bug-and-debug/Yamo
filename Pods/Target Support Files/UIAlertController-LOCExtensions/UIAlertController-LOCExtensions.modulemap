@@ -1,0 +1,6 @@
+framework module UIAlertController_LOCExtensions {
+  umbrella header "UIAlertController-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

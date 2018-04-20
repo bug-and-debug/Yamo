@@ -1,0 +1,22 @@
+{
+  "name": "LOCFloatingTextField",
+  "version": "1.0.10",
+  "authors": {
+    "Vlad Buhaescu": "vlad.buhaescu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/locfloatingtextfield",
+  "summary": "Initial version of floating text field component.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/locfloatingtextfield.git",
+    "tag": "1.0.10"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "LOCFloatingTextField/Classes/*.{h,m}"
+}

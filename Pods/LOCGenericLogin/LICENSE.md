@@ -1,0 +1,5 @@
+This software is only for Locassa internal use.
+
+Locassa Ltd. 50 Hoxton Street, London, N1 6LP 
+Tel: +44 (0)20 7125 0072 
+Email: hello@locassa.com

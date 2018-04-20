@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Graphik-Regular.ttf">
+            <string>Graphik-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YourPlaceActionSheet">
+            <connections>
+                <outlet property="bottomShadow" destination="Sas-h6-yz2" id="mkb-Ae-N9U"/>
+                <outlet property="cancelButton" destination="RDp-yx-hWD" id="3Si-V4-OEl"/>
+                <outlet property="optionsTableView" destination="W6o-YE-3EG" id="9Ol-Ho-Iff"/>
+                <outlet property="titleLabel" destination="lLn-1O-kim" id="phd-VT-RWH"/>
+                <outlet property="view" destination="olE-0B-Zbr" id="ITB-Ks-M0R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="olE-0B-Zbr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnW-hL-gHy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit your places" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLn-1O-kim">
+                            <rect key="frame" x="16" y="16" width="343" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="1Ut-ky-ct0"/>
+                        <constraint firstItem="lLn-1O-kim" firstAttribute="leading" secondItem="rnW-hL-gHy" secondAttribute="leading" constant="16" id="TKB-6I-LLj"/>
+                        <constraint firstItem="lLn-1O-kim" firstAttribute="centerY" secondItem="rnW-hL-gHy" secondAttribute="centerY" id="Ter-i4-bAp"/>
+                        <constraint firstAttribute="trailing" secondItem="lLn-1O-kim" secondAttribute="trailing" constant="16" id="WZm-PX-efP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-yx-hWD">
+                    <rect key="frame" x="15" y="244" width="345" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="tQ6-OE-rFa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="14"/>
+                    <state key="normal" title="Cancel" backgroundImage="Buttonyellowactive"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W6o-YE-3EG">
+                    <rect key="frame" x="0.0" y="54" width="375" height="182"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sas-h6-yz2">
+                    <rect key="frame" x="0.0" y="54" width="375" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="Df6-Ja-Ach"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Sas-h6-yz2" firstAttribute="trailing" secondItem="rnW-hL-gHy" secondAttribute="trailing" id="1oi-jr-kzf"/>
+                <constraint firstItem="RDp-yx-hWD" firstAttribute="top" secondItem="W6o-YE-3EG" secondAttribute="bottom" constant="8" id="3Sa-yD-eGo"/>
+                <constraint firstItem="rnW-hL-gHy" firstAttribute="leading" secondItem="olE-0B-Zbr" secondAttribute="leading" id="88a-NT-jv9"/>
+                <constraint firstAttribute="trailing" secondItem="W6o-YE-3EG" secondAttribute="trailing" id="DY1-pY-qdA"/>
+                <constraint firstItem="W6o-YE-3EG" firstAttribute="top" secondItem="rnW-hL-gHy" secondAttribute="bottom" id="FIp-pY-aKA"/>
+                <constraint firstItem="Sas-h6-yz2" firstAttribute="top" secondItem="rnW-hL-gHy" secondAttribute="bottom" id="Fi9-Sl-0hl"/>
+                <constraint firstItem="RDp-yx-hWD" firstAttribute="leading" secondItem="olE-0B-Zbr" secondAttribute="leading" constant="15" id="Guw-b3-crs"/>
+                <constraint firstItem="W6o-YE-3EG" firstAttribute="top" secondItem="Sas-h6-yz2" secondAttribute="bottom" constant="8" id="NrH-Wt-96b"/>
+                <constraint firstItem="rnW-hL-gHy" firstAttribute="top" secondItem="olE-0B-Zbr" secondAttribute="top" id="Xyf-6P-UFr"/>
+                <constraint firstAttribute="trailing" secondItem="rnW-hL-gHy" secondAttribute="trailing" id="Ykc-TS-Yeg"/>
+                <constraint firstAttribute="trailing" secondItem="RDp-yx-hWD" secondAttribute="trailing" constant="15" id="hra-4E-fBA"/>
+                <constraint firstItem="RDp-yx-hWD" firstAttribute="centerX" secondItem="olE-0B-Zbr" secondAttribute="centerX" id="lx5-vv-5tf"/>
+                <constraint firstItem="W6o-YE-3EG" firstAttribute="leading" secondItem="olE-0B-Zbr" secondAttribute="leading" id="nTN-lm-0Sq"/>
+                <constraint firstAttribute="bottom" secondItem="RDp-yx-hWD" secondAttribute="bottom" constant="8" id="oOq-ko-ddd"/>
+                <constraint firstItem="Sas-h6-yz2" firstAttribute="leading" secondItem="rnW-hL-gHy" secondAttribute="leading" id="rOi-Q1-9nx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NrH-Wt-96b"/>
+                    <exclude reference="lx5-vv-5tf"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="Buttonyellowactive" width="290" height="48"/>
+    </resources>
+</document>

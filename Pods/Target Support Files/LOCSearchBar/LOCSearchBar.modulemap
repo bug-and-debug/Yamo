@@ -1,0 +1,6 @@
+framework module LOCSearchBar {
+  umbrella header "LOCSearchBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

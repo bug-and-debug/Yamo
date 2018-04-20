@@ -1,0 +1,6 @@
+framework module NSFileManager_LOCExtensions {
+  umbrella header "NSFileManager-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

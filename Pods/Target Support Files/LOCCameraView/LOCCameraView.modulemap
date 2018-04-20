@@ -1,0 +1,6 @@
+framework module LOCCameraView {
+  umbrella header "LOCCameraView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CB8F7A8913280442B70F78E3F6AED3CB374F85F5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CB8F7A8913280442B70F78E3F6AED3CB374F85F5" : 0,
+    "0068F9F7ED246E4EAE4B052AD7A161CF26E0C904" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "408C2D46-F201-4558-BE05-DA3B1E67C603",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CB8F7A8913280442B70F78E3F6AED3CB374F85F5" : "yamo_ios\/",
+    "0068F9F7ED246E4EAE4B052AD7A161CF26E0C904" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Yamo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Yamo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/locassa\/camraios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0068F9F7ED246E4EAE4B052AD7A161CF26E0C904"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/locassa\/yamo_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CB8F7A8913280442B70F78E3F6AED3CB374F85F5"
+    }
+  ]
+}

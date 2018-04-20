@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Graphik-Regular.ttf">
+            <string>Graphik-Regular</string>
+        </array>
+        <array key="TrianonCaption-ExtraLight.ttf">
+            <string>TrianonCaption-ExtraLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExhibitionSimilarVenueTableViewCell" rowHeight="292" id="ytH-eK-K4J" customClass="ExhibitionSimilarVenueTableViewCell" customModule="Yamo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="292"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ytH-eK-K4J" id="llt-am-slu">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="291.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="753" verticalCompressionResistancePriority="753" translatesAutoresizingMaskIntoConstraints="NO" id="nYi-cR-Jkv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="190" id="qIQ-1X-j0h"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="753" verticalCompressionResistancePriority="753" translatesAutoresizingMaskIntoConstraints="NO" id="dG9-6u-4xk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="190" id="2Ga-2l-4tF"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQp-TP-XcN">
+                        <rect key="frame" x="0.0" y="190" width="320" height="86"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Scottish Artists 1750 - 1900: From Caledonia To The Continent" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x0-ZL-byT">
+                                <rect key="frame" x="16" y="10" width="288" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="5S8-bz-3pF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="uGz-Ay-4yE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrianonCaption-ExtraLight" family="Trianon Caption" pointSize="17.5"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="uGz-Ay-4yE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="The Queen's Gallery ugeiab geb iugbaeui biaeb fibeifu aebiubf aefbaiuebf iuaebf a" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idB-Qg-Tf4">
+                                <rect key="frame" x="16" y="53" width="288" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="7yj-qm-Nhd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="vCp-mB-xc3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7yj-qm-Nhd"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="idB-Qg-Tf4" firstAttribute="leading" secondItem="8x0-ZL-byT" secondAttribute="leading" id="1JT-rE-QB0"/>
+                            <constraint firstItem="8x0-ZL-byT" firstAttribute="leading" secondItem="hQp-TP-XcN" secondAttribute="leading" constant="16" id="6yy-sR-avb"/>
+                            <constraint firstItem="idB-Qg-Tf4" firstAttribute="trailing" secondItem="8x0-ZL-byT" secondAttribute="trailing" id="InS-qg-dHj"/>
+                            <constraint firstAttribute="trailing" secondItem="8x0-ZL-byT" secondAttribute="trailing" constant="16" id="PG5-rr-dnc"/>
+                            <constraint firstAttribute="bottom" secondItem="idB-Qg-Tf4" secondAttribute="bottom" constant="8" id="aZI-By-MlA"/>
+                            <constraint firstItem="idB-Qg-Tf4" firstAttribute="leading" secondItem="8x0-ZL-byT" secondAttribute="leading" id="i1O-Xy-oaE"/>
+                            <constraint firstItem="8x0-ZL-byT" firstAttribute="top" secondItem="hQp-TP-XcN" secondAttribute="top" constant="10" id="mRV-Ho-qSX"/>
+                            <constraint firstItem="idB-Qg-Tf4" firstAttribute="top" secondItem="8x0-ZL-byT" secondAttribute="bottom" constant="8" id="ylY-Fg-MkX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="i1O-Xy-oaE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hQp-TP-XcN" secondAttribute="bottom" constant="16" id="Ebv-QQ-U67"/>
+                    <constraint firstItem="dG9-6u-4xk" firstAttribute="leading" secondItem="nYi-cR-Jkv" secondAttribute="leading" id="FRp-Mu-30K"/>
+                    <constraint firstItem="hQp-TP-XcN" firstAttribute="leading" secondItem="llt-am-slu" secondAttribute="leading" id="OAs-Wb-Emd"/>
+                    <constraint firstItem="dG9-6u-4xk" firstAttribute="bottom" secondItem="nYi-cR-Jkv" secondAttribute="bottom" id="aOA-qd-D1E"/>
+                    <constraint firstAttribute="trailing" secondItem="hQp-TP-XcN" secondAttribute="trailing" id="blj-mr-I8n"/>
+                    <constraint firstItem="dG9-6u-4xk" firstAttribute="trailing" secondItem="nYi-cR-Jkv" secondAttribute="trailing" id="csy-av-wiI"/>
+                    <constraint firstItem="hQp-TP-XcN" firstAttribute="top" secondItem="nYi-cR-Jkv" secondAttribute="bottom" id="euW-R8-eqk"/>
+                    <constraint firstItem="nYi-cR-Jkv" firstAttribute="leading" secondItem="llt-am-slu" secondAttribute="leading" id="i2n-oR-IM2"/>
+                    <constraint firstAttribute="trailing" secondItem="nYi-cR-Jkv" secondAttribute="trailing" id="ive-LM-jdh"/>
+                    <constraint firstItem="nYi-cR-Jkv" firstAttribute="top" secondItem="llt-am-slu" secondAttribute="top" id="qmM-WV-Sm1"/>
+                    <constraint firstItem="dG9-6u-4xk" firstAttribute="top" secondItem="nYi-cR-Jkv" secondAttribute="top" id="sA3-uy-UMT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentImageView" destination="nYi-cR-Jkv" id="4Xe-7g-heb"/>
+                <outlet property="exhibitionLocationNameLabel" destination="idB-Qg-Tf4" id="vOj-wN-HuS"/>
+                <outlet property="exhibitionNameLabel" destination="8x0-ZL-byT" id="JA5-zq-UnR"/>
+                <outlet property="placeholderContentView" destination="dG9-6u-4xk" id="fjY-bx-7tz"/>
+            </connections>
+            <point key="canvasLocation" x="513" y="425"/>
+        </tableViewCell>
+    </objects>
+</document>

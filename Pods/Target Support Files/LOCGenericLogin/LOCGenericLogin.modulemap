@@ -1,0 +1,6 @@
+framework module LOCGenericLogin {
+  umbrella header "LOCGenericLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

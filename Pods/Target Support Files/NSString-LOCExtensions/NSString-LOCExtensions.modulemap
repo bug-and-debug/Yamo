@@ -1,0 +1,6 @@
+framework module NSString_LOCExtensions {
+  umbrella header "NSString-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

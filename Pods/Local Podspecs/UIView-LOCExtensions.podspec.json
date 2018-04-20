@@ -1,0 +1,78 @@
+{
+  "name": "UIView-LOCExtensions",
+  "version": "1.22",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/uiview-locextensions.git",
+  "summary": "Convenient methods in a set of UIView categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/uiview-locextensions.git",
+    "tag": "1.22"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Autolayout",
+      "source_files": "Sources/UIView+LOCAutolayout.{h,m}"
+    },
+    {
+      "name": "Divider",
+      "source_files": "Sources/UIView+LOCDivider.{h,m}"
+    },
+    {
+      "name": "Factory",
+      "dependencies": {
+        "UIView-LOCExtensions/LayerEditing": [
+
+        ]
+      },
+      "source_files": "Sources/UIView+LOCFactory.{h,m}"
+    },
+    {
+      "name": "Layout",
+      "source_files": "Sources/UIView+LOCLayout.{h,m}"
+    },
+    {
+      "name": "LayerEditing",
+      "source_files": "Sources/UIView+LOCLayerEditing.{h,m}"
+    },
+    {
+      "name": "Alpha",
+      "source_files": "Sources/UIView+LOCAlpha.{h,m}"
+    },
+    {
+      "name": "FrameSetting",
+      "dependencies": {
+        "UIView-LOCExtensions/Layout": [
+
+        ]
+      },
+      "source_files": "Sources/UIView+LOCFrameSetting.{h,m}"
+    },
+    {
+      "name": "Rotation",
+      "source_files": "Sources/UIView+LOCRotation.{h,m}"
+    },
+    {
+      "name": "ComplexAnimations",
+      "source_files": "Sources/UIView+LOCComplexAnimations.{h,m}"
+    },
+    {
+      "name": "Doppelganger",
+      "dependencies": {
+        "UIView-LOCExtensions/Alpha": [
+
+        ]
+      },
+      "source_files": "Sources/UIView+LOCDoppelganger.{h,m}"
+    }
+  ]
+}

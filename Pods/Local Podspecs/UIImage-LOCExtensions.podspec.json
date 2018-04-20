@@ -1,0 +1,64 @@
+{
+  "name": "UIImage-LOCExtensions",
+  "version": "1.1",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/uiimage-locextensions.git",
+  "summary": "Convenient methods in a set of UIImage categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/uiimage-locextensions.git",
+    "tag": "1.1"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Alpha",
+      "source_files": "Sources/UIImage+LOCAlpha.{h,m}"
+    },
+    {
+      "name": "Color",
+      "source_files": "Sources/UIImage+LOCColor.{h,m}"
+    },
+    {
+      "name": "Draw",
+      "source_files": "Sources/UIImage+LOCDraw.{h,m}"
+    },
+    {
+      "name": "Effects",
+      "source_files": "Sources/UIImage+LOCEffects.{h,m}"
+    },
+    {
+      "name": "Resize",
+      "source_files": "Sources/UIImage+LOCResize.{h,m}"
+    },
+    {
+      "name": "Network",
+      "dependencies": {
+        "NSString-LOCExtensions/Utilities": [
+
+        ],
+        "NSFileManager-LOCExtensions/Actions": [
+
+        ],
+        "NSFileManager-LOCExtensions/Directories": [
+
+        ],
+        "UIImage-LOCExtensions/Resize": [
+
+        ]
+      },
+      "xcconfig": {
+        "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/NSString-LOCExtensions $(PODS_ROOT)/NSFileManager-LOCExtensions"
+      },
+      "source_files": "Sources/UIImage+LOCNetwork.{h,m}"
+    }
+  ]
+}

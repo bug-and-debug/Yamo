@@ -1,0 +1,36 @@
+{
+  "name": "UIImagePickerController-LOCExtensions",
+  "version": "1.1",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/uiimagepickercontroller-locextensions.git",
+  "summary": "Convenient methods in a set of UIImagePickerController categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/uiimagepickercontroller-locextensions.git",
+    "tag": "1.1"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Validation",
+      "source_files": "Sources/UIImagePickerController+LOCValidation.{h,m}"
+    },
+    {
+      "name": "Creation",
+      "dependencies": {
+        "UIImagePickerController-LOCExtensions/Validation": [
+
+        ]
+      },
+      "source_files": "Sources/UIImagePickerController+LOCCreation.{h,m}"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YourPlaceOptionTableViewCell" rowHeight="45" id="l7e-1x-dcG" customClass="YourPlaceOptionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l7e-1x-dcG" id="5jN-hm-l3J">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf3-Es-MGQ">
+                        <rect key="frame" x="15" y="12" width="290" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86d-LU-9Bc">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="a8R-Oc-DYL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cf3-Es-MGQ" firstAttribute="leading" secondItem="5jN-hm-l3J" secondAttribute="leading" constant="15" id="RdV-vc-29E"/>
+                    <constraint firstItem="cf3-Es-MGQ" firstAttribute="centerY" secondItem="5jN-hm-l3J" secondAttribute="centerY" id="SDm-Vc-2bM"/>
+                    <constraint firstAttribute="bottom" secondItem="86d-LU-9Bc" secondAttribute="bottom" id="VD9-1S-1fX"/>
+                    <constraint firstAttribute="trailing" secondItem="86d-LU-9Bc" secondAttribute="trailing" id="bhV-Dl-jBb"/>
+                    <constraint firstAttribute="trailing" secondItem="cf3-Es-MGQ" secondAttribute="trailing" constant="15" id="deE-nz-Xbs"/>
+                    <constraint firstItem="86d-LU-9Bc" firstAttribute="leading" secondItem="5jN-hm-l3J" secondAttribute="leading" id="nNs-6r-RDT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editTitleLabel" destination="cf3-Es-MGQ" id="V6o-db-CiI"/>
+                <outlet property="separator" destination="86d-LU-9Bc" id="rvW-K3-5S2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

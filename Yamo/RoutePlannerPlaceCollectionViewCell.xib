@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Graphik-Regular.ttf">
+            <string>Graphik-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoutePlannerPlaceCollectionViewCell" id="3UN-RR-mq5" customClass="RoutePlannerPlaceCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPh-nA-KtA">
+                        <rect key="frame" x="35" y="23" width="14" height="14"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="ZvO-qd-4Qe"/>
+                            <constraint firstAttribute="width" secondItem="nPh-nA-KtA" secondAttribute="height" multiplier="1:1" id="pIy-wG-ime"/>
+                            <constraint firstAttribute="height" constant="14" id="sow-Gf-HIE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pIy-wG-ime"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-g0-0On">
+                        <rect key="frame" x="74" y="23" width="223" height="12"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL1-P8-qSv">
+                                <rect key="frame" x="0.0" y="0.0" width="223" height="12"/>
+                                <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mL1-P8-qSv" firstAttribute="leading" secondItem="hG9-g0-0On" secondAttribute="leading" id="RcI-nt-Abq"/>
+                            <constraint firstAttribute="bottom" secondItem="mL1-P8-qSv" secondAttribute="bottom" id="YDh-R3-MUy"/>
+                            <constraint firstItem="mL1-P8-qSv" firstAttribute="top" secondItem="hG9-g0-0On" secondAttribute="top" id="efD-lk-csX"/>
+                            <constraint firstAttribute="trailing" secondItem="mL1-P8-qSv" secondAttribute="trailing" id="qeh-3f-Qad"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzZ-sW-gqH">
+                        <rect key="frame" x="313" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Gle-tW-w1W"/>
+                            <constraint firstAttribute="width" constant="44" id="zSd-8z-PMo"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                        <state key="normal" image="Icon edit"/>
+                        <connections>
+                            <action selector="handleDidPressEditSource:" destination="3UN-RR-mq5" eventType="touchUpInside" id="o6Z-GQ-Lmv"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="nPh-nA-KtA" firstAttribute="top" secondItem="hG9-g0-0On" secondAttribute="top" constant="-1" id="1nZ-Zq-xIn"/>
+                <constraint firstItem="hG9-g0-0On" firstAttribute="leading" secondItem="3UN-RR-mq5" secondAttribute="leading" constant="74" id="2Ie-6E-aen"/>
+                <constraint firstAttribute="trailing" secondItem="hG9-g0-0On" secondAttribute="trailing" constant="16" id="2bd-UU-QFV"/>
+                <constraint firstAttribute="trailing" secondItem="PzZ-sW-gqH" secondAttribute="trailing" constant="16" id="LCN-oj-yzW"/>
+                <constraint firstItem="nPh-nA-KtA" firstAttribute="leading" secondItem="3UN-RR-mq5" secondAttribute="leading" constant="35" id="P4a-SN-26W"/>
+                <constraint firstItem="hG9-g0-0On" firstAttribute="leading" secondItem="nPh-nA-KtA" secondAttribute="trailing" constant="16" id="ZEx-KB-XIh"/>
+                <constraint firstItem="hG9-g0-0On" firstAttribute="top" secondItem="3UN-RR-mq5" secondAttribute="top" constant="20" id="eRS-fT-deP"/>
+                <constraint firstItem="PzZ-sW-gqH" firstAttribute="leading" secondItem="hG9-g0-0On" secondAttribute="trailing" constant="16" id="k7m-Qr-VS2"/>
+                <constraint firstItem="hG9-g0-0On" firstAttribute="top" secondItem="nPh-nA-KtA" secondAttribute="top" id="nGO-aP-bIy"/>
+                <constraint firstItem="nPh-nA-KtA" firstAttribute="top" secondItem="hG9-g0-0On" secondAttribute="top" id="pYa-t9-rT9"/>
+                <constraint firstAttribute="bottom" secondItem="hG9-g0-0On" secondAttribute="bottom" constant="6" id="qUH-Go-0da"/>
+                <constraint firstItem="PzZ-sW-gqH" firstAttribute="top" secondItem="3UN-RR-mq5" secondAttribute="top" constant="8" id="sgW-Zh-ebK"/>
+                <constraint firstItem="hG9-g0-0On" firstAttribute="top" secondItem="PzZ-sW-gqH" secondAttribute="bottom" constant="-32" id="uzK-F9-KHS"/>
+                <constraint firstItem="nPh-nA-KtA" firstAttribute="centerY" secondItem="3UN-RR-mq5" secondAttribute="centerY" id="xFu-Bp-Xat"/>
+            </constraints>
+            <size key="customSize" width="154" height="39"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1nZ-Zq-xIn"/>
+                    <exclude reference="pYa-t9-rT9"/>
+                    <exclude reference="2bd-UU-QFV"/>
+                    <exclude reference="ZEx-KB-XIh"/>
+                    <exclude reference="eRS-fT-deP"/>
+                    <exclude reference="qUH-Go-0da"/>
+                    <exclude reference="uzK-F9-KHS"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="annotationContainerView" destination="nPh-nA-KtA" id="Ey0-BP-9KD"/>
+                <outlet property="mainTitleLabel" destination="mL1-P8-qSv" id="ABe-7s-35l"/>
+            </connections>
+            <point key="canvasLocation" x="190.5" y="465"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon edit" width="38" height="38"/>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>lat</key>
+		<real>51.5310935</real>
+		<key>name</key>
+		<string>Hoxton Gallery</string>
+		<key>lon</key>
+		<real>-0.08527279</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Shoreditch Arts Exhibition</string>
+		<key>lat</key>
+		<real>51.5310401</real>
+		<key>lon</key>
+		<real>-0.08752583999999999</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Haggerston Art</string>
+		<key>lat</key>
+		<real>51.534871</real>
+		<key>lon</key>
+		<real>-0.08385658</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dalston Modern Art Exhibition</string>
+		<key>lat</key>
+		<real>51.53714001</real>
+		<key>lon</key>
+		<real>-0.07859945</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Classic Art at Hoxton</string>
+		<key>lat</key>
+		<real>51.53920872</real>
+		<key>lon</key>
+		<real>-0.06784916000000001</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ancient Art</string>
+		<key>lat</key>
+		<real>51.53242834</real>
+		<key>lon</key>
+		<real>-0.06287098000000001</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Modern</string>
+		<key>lat</key>
+		<real>51.52711544</real>
+		<key>lon</key>
+		<real>-0.06021023</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Contemporary Art</string>
+		<key>lat</key>
+		<real>51.51663467</real>
+		<key>lon</key>
+		<real>-0.05933046</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Spitalfields Art</string>
+		<key>lat</key>
+		<real>51.50728672</real>
+		<key>lon</key>
+		<real>-0.06926537000000001</real>
+	</dict>
+</array>
+</plist>

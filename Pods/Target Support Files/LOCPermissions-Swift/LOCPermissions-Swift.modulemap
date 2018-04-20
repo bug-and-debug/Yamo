@@ -1,0 +1,6 @@
+framework module LOCPermissions_Swift {
+  umbrella header "LOCPermissions-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

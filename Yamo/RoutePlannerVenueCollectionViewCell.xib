@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoutePlannerVenueCollectionViewCell" id="3UN-RR-mq5" customClass="RoutePlannerVenueCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPh-nA-KtA">
+                        <rect key="frame" x="24" y="12" width="34" height="34"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="ZvO-qd-4Qe"/>
+                            <constraint firstAttribute="width" secondItem="nPh-nA-KtA" secondAttribute="height" multiplier="1:1" id="pIy-wG-ime"/>
+                            <constraint firstAttribute="height" constant="34" id="sow-Gf-HIE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pIy-wG-ime"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96G-Jq-hoU">
+                        <rect key="frame" x="19" y="7" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Zne-tU-x6c"/>
+                            <constraint firstAttribute="width" constant="44" id="b7Z-rC-9dT"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-g0-0On">
+                        <rect key="frame" x="74" y="12" width="285" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL1-P8-qSv">
+                                <rect key="frame" x="0.0" y="0.0" width="285" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkv-Jf-WKw">
+                                <rect key="frame" x="0.0" y="23" width="285" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xkv-Jf-WKw" firstAttribute="top" secondItem="mL1-P8-qSv" secondAttribute="bottom" constant="2" id="8tL-JM-ccL"/>
+                            <constraint firstAttribute="trailing" secondItem="Xkv-Jf-WKw" secondAttribute="trailing" id="EOp-XY-SbF"/>
+                            <constraint firstItem="Xkv-Jf-WKw" firstAttribute="leading" secondItem="hG9-g0-0On" secondAttribute="leading" id="GTz-fF-Sde"/>
+                            <constraint firstAttribute="bottom" secondItem="Xkv-Jf-WKw" secondAttribute="bottom" id="LP3-ik-OsT"/>
+                            <constraint firstItem="mL1-P8-qSv" firstAttribute="leading" secondItem="hG9-g0-0On" secondAttribute="leading" id="RcI-nt-Abq"/>
+                            <constraint firstItem="mL1-P8-qSv" firstAttribute="top" secondItem="hG9-g0-0On" secondAttribute="top" id="efD-lk-csX"/>
+                            <constraint firstAttribute="trailing" secondItem="mL1-P8-qSv" secondAttribute="trailing" id="qeh-3f-Qad"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hG9-g0-0On" secondAttribute="trailing" constant="16" id="2bd-UU-QFV"/>
+                <constraint firstItem="nPh-nA-KtA" firstAttribute="leading" secondItem="3UN-RR-mq5" secondAttribute="leading" constant="24" id="GLh-AG-Jts"/>
+                <constraint firstItem="hG9-g0-0On" firstAttribute="top" secondItem="3UN-RR-mq5" secondAttribute="top" constant="12" id="eRS-fT-deP"/>
+                <constraint firstItem="96G-Jq-hoU" firstAttribute="centerY" secondItem="nPh-nA-KtA" secondAttribute="centerY" id="g7P-av-cMq"/>
+                <constraint firstItem="nPh-nA-KtA" firstAttribute="top" secondItem="hG9-g0-0On" secondAttribute="top" id="pYa-t9-rT9"/>
+                <constraint firstAttribute="bottom" secondItem="hG9-g0-0On" secondAttribute="bottom" constant="6" id="qUH-Go-0da"/>
+                <constraint firstItem="hG9-g0-0On" firstAttribute="leading" secondItem="3UN-RR-mq5" secondAttribute="leading" constant="74" id="qsd-fm-fU7"/>
+                <constraint firstItem="96G-Jq-hoU" firstAttribute="centerX" secondItem="nPh-nA-KtA" secondAttribute="centerX" id="wMR-mc-2cB"/>
+            </constraints>
+            <size key="customSize" width="156" height="79"/>
+            <connections>
+                <outlet property="annotationButton" destination="96G-Jq-hoU" id="9gw-aE-rJz"/>
+                <outlet property="annotationContainerView" destination="nPh-nA-KtA" id="Ey0-BP-9KD"/>
+                <outlet property="mainTitleLabel" destination="mL1-P8-qSv" id="ABe-7s-35l"/>
+                <outlet property="subtitleLabel" destination="Xkv-Jf-WKw" id="Ydf-Q6-e25"/>
+            </connections>
+            <point key="canvasLocation" x="192" y="485.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

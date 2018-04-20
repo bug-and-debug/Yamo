@@ -1,0 +1,6 @@
+framework module UIColor_LOCExtensions {
+  umbrella header "UIColor-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

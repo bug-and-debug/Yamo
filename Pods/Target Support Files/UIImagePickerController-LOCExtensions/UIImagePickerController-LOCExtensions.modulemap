@@ -1,0 +1,6 @@
+framework module UIImagePickerController_LOCExtensions {
+  umbrella header "UIImagePickerController-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

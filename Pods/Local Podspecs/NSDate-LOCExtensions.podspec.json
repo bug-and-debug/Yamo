@@ -1,0 +1,75 @@
+{
+  "name": "NSDate-LOCExtensions",
+  "version": "1.0",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/nsdate-locextensions.git",
+  "summary": "Convenient methods in a set of NSDate categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/nsdate-locextensions.git",
+    "tag": "1.0"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Definitions",
+      "source_files": "Sources/Definitions.h"
+    },
+    {
+      "name": "Creation",
+      "dependencies": {
+        "NSDate-LOCExtensions/Definitions": [
+
+        ]
+      },
+      "source_files": "Sources/NSDate+LOCCreation.{h,m}"
+    },
+    {
+      "name": "Timespan",
+      "source_files": "Sources/NSDate+LOCTimespan.{h,m}"
+    },
+    {
+      "name": "Comparison",
+      "dependencies": {
+        "NSDate-LOCExtensions/Definitions": [
+
+        ],
+        "NSDate-LOCExtensions/Creation": [
+
+        ],
+        "NSDate-LOCExtensions/Timespan": [
+
+        ]
+      },
+      "source_files": "Sources/NSDate+LOCComparison.{h,m}"
+    },
+    {
+      "name": "DateData",
+      "dependencies": {
+        "NSDate-LOCExtensions/Definitions": [
+
+        ],
+        "NSDate-LOCExtensions/Timespan": [
+
+        ]
+      },
+      "source_files": "Sources/NSDate+LOCDateData.{h,m}"
+    },
+    {
+      "name": "StringRepresentation",
+      "source_files": "Sources/NSDate+LOCStringRepresentation.{h,m}"
+    },
+    {
+      "name": "Relation",
+      "source_files": "Sources/NSDate+LOCRelation.{h,m}"
+    }
+  ]
+}

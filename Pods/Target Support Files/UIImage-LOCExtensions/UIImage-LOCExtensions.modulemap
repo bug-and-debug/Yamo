@@ -1,0 +1,6 @@
+framework module UIImage_LOCExtensions {
+  umbrella header "UIImage-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

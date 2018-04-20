@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginFormView">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="332"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBx-eG-str">
+                    <rect key="frame" x="14" y="206" width="290" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Log In with Facebook" backgroundImage="FBBlueButtonBackground">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqM-K6-4dD" customClass="TextField">
+                    <rect key="frame" x="12" y="37" width="302" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="p2t-fa-QM2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidChange:" destination="iN0-l3-epB" eventType="editingChanged" id="nea-Yn-MsC"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-Fi-KOn" customClass="PasswordTextField">
+                    <rect key="frame" x="12" y="118" width="302" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="poI-wV-hRQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidChange:" destination="iN0-l3-epB" eventType="editingDidEnd" id="suQ-Mk-V8Q"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-oH-Awo">
+                    <rect key="frame" x="12" y="8" width="34.666666666666664" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KD-NV-thB">
+                    <rect key="frame" x="12" y="89" width="62.333333333333329" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25B-8d-POy">
+                    <rect key="frame" x="185" y="167" width="119" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Forgotten Password?">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dd7-oH-Awo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2Ud-lz-QtP"/>
+                <constraint firstItem="2KD-NV-thB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="BZ1-yP-haV"/>
+                <constraint firstItem="zqM-K6-4dD" firstAttribute="top" secondItem="dd7-oH-Awo" secondAttribute="bottom" constant="12" id="BtT-20-few"/>
+                <constraint firstItem="2KD-NV-thB" firstAttribute="top" secondItem="zqM-K6-4dD" secondAttribute="bottom" constant="12" id="Fej-3Y-uC8"/>
+                <constraint firstItem="Zpv-Fi-KOn" firstAttribute="top" secondItem="2KD-NV-thB" secondAttribute="bottom" constant="12" id="MrI-9L-c5t"/>
+                <constraint firstItem="Zpv-Fi-KOn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="T3Q-Oh-FBh"/>
+                <constraint firstAttribute="trailing" secondItem="zqM-K6-4dD" secondAttribute="trailing" constant="12" id="Zdw-qE-GDR"/>
+                <constraint firstItem="zqM-K6-4dD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="ciE-Of-wYj"/>
+                <constraint firstAttribute="trailing" secondItem="Zpv-Fi-KOn" secondAttribute="trailing" constant="12" id="fWf-kS-dtH"/>
+                <constraint firstItem="dd7-oH-Awo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="heW-wv-2kf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emailLabel" destination="dd7-oH-Awo" id="SXO-jG-u36"/>
+                <outlet property="emailTextField" destination="zqM-K6-4dD" id="dDU-ov-Lmi"/>
+                <outlet property="forgotPasswordButton" destination="25B-8d-POy" id="gqE-35-4du"/>
+                <outlet property="passwordLabel" destination="2KD-NV-thB" id="I1D-Ca-zv3"/>
+                <outlet property="passwordTextField" destination="Zpv-Fi-KOn" id="mda-u7-tnG"/>
+            </connections>
+            <point key="canvasLocation" x="-218" y="-15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FBBlueButtonBackground" width="290" height="47"/>
+    </resources>
+</document>

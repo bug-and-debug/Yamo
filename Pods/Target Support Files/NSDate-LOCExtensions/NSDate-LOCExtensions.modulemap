@@ -1,0 +1,6 @@
+framework module NSDate_LOCExtensions {
+  umbrella header "NSDate-LOCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "MTLModel-LOCExtensions",
+  "version": "1.1.5",
+  "authors": {
+    "Hungju Lu": "hungju.lu@locassa.com"
+  },
+  "homepage": "https://bitbucket.org/locassa/mtlmodel-locextensions.git",
+  "summary": "Convenient methods in a set of MTLModel categories.",
+  "source": {
+    "git": "https://bitbucket.org/locassa/mtlmodel-locextensions.git",
+    "tag": "1.1.5"
+  },
+  "license": {
+    "type": "COMMERCIAL",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Conversion",
+      "dependencies": {
+        "Mantle": [
+
+        ]
+      },
+      "xcconfig": {
+        "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/Mantle"
+      },
+      "source_files": "Sources/MTLModel+LOCConversion.{h,m}"
+    },
+    {
+      "name": "Mock",
+      "dependencies": {
+        "NSDate-LOCExtensions/Creation": [
+          "= 1.0"
+        ],
+        "Mantle": [
+
+        ]
+      },
+      "xcconfig": {
+        "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/NSDate-LOCExtensions $(PODS_ROOT)/Mantle"
+      },
+      "source_files": "Sources/MTLModel+LOCMock.{h,m}"
+    }
+  ]
+}

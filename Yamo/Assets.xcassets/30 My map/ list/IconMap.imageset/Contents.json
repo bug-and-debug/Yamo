@@ -1,0 +1,23 @@
+{
+    "images": [
+        {
+            "filename": "IconMap@1x.png",
+            "idiom": "universal",
+            "scale": "1x"
+        },
+        {
+            "filename": "IconMap@2x.png",
+            "idiom": "universal",
+            "scale": "2x"
+        },
+        {
+            "filename": "IconMap@3x.png",
+            "idiom": "universal",
+            "scale": "3x"
+        }
+    ],
+    "info": {
+        "author": "xcode",
+        "version": 1
+    }
+}

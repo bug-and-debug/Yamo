@@ -1,0 +1,6 @@
+framework module LOCFloatingTextField {
+  umbrella header "LOCFloatingTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}
